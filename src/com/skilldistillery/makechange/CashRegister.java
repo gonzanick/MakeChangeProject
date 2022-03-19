@@ -47,26 +47,25 @@ public class CashRegister {
 			if (remainder >= .25) {
 				double quarter = (double) remainder / .25;
 					remainder %= .25;
-				System.out.println(quarter + " quarter(s)");
+				System.out.println((int)quarter + " quarter(s)");
 			}
 			if (remainder >= .10) {
 				double dime = (double) remainder / .10;
 					remainder %= .10;
-				System.out.println(dime + " dime(s)");
+				System.out.println((int)dime + " dime(s)");
 			}
 			if (remainder >= .05) {
 				double nickel= (double) remainder / .05;
 					remainder %= .05;
-				System.out.println(nickel + " nickel(s)");
+				System.out.println((int)nickel + " nickel(s)");
 			}
 			if (remainder >= .01) {
-				double pen = (double) remainder / .01;
+				double penn = (float) remainder / .01;
 					remainder %= 10;
-				System.out.println(pen + " penny(s)");
+				System.out.println((int)Math.round(penn) + " penny(s)");
 			}
 		}
 
 	}
 	
-
 }
