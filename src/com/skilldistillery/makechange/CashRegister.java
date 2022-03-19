@@ -29,13 +29,41 @@ public class CashRegister {
 				remainder %= 20;
 				System.out.println(twenty + " twenty dollar bill(s)");
 			}
-			if (remainder > 10) {
+			if (remainder >= 10) {
 				int ten = (int) remainder / 10;
 					remainder %= 10;
 				System.out.println(ten + " ten dollar bill(s)");
 			}
-		
-			
+			if (remainder >= 5) {
+				int five = (int) remainder / 5;
+					remainder %= 5;
+				System.out.println(five + " five dollar bill(s)");
+			}
+			if (remainder >= 1) {
+				int one = (int) remainder / 1;
+					remainder %= 1;
+				System.out.println(one + " one dollar bill(s)");
+			}
+			if (remainder >= .25) {
+				double quarter = (double) remainder / .25;
+					remainder %= .25;
+				System.out.println(quarter + " quarter(s)");
+			}
+			if (remainder >= .10) {
+				double dime = (double) remainder / .10;
+					remainder %= .10;
+				System.out.println(dime + " dime(s)");
+			}
+			if (remainder >= .05) {
+				double nickel= (double) remainder / .05;
+					remainder %= .05;
+				System.out.println(nickel + " nickel(s)");
+			}
+			if (remainder >= .01) {
+				double pen = (double) remainder / .01;
+					remainder %= 10;
+				System.out.println(pen + " penny(s)");
+			}
 		}
 
 	}
