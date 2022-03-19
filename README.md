@@ -5,13 +5,15 @@
 ## Overview
 
 Cash register simulator
-TODO: Finish Writing This!!
+* Make a program that the user will enter in the item price and enter payment.
+* Have the program calculate change and message back to the user
 
 ## Technologies/Skills
 
 *Java
 *Eclipse
-*TODO: More
+*Git
+*Github
 
 ## Lessons Learned
 
