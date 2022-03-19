@@ -15,7 +15,9 @@ public class CashRegister {
 		
 		if (inputPrice == inputPay) {
 			System.out.println("No change needed.");
-		} 
+		} else if (inputPrice > inputPay) {
+			System.out.println("Insufficient payment.");
+		}
 
 	}
 
