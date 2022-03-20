@@ -65,6 +65,7 @@ public class CashRegister {
 				System.out.println((int)Math.round(penn) + " penny(s)");
 			}
 		}
+		sc.close();
 
 	}
 	
